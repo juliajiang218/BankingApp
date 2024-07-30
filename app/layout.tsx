@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Serif } from "next/font/google";
+import { Inter, Sawarabi_Gothic } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable:'--font-inter' });
-const ibmPlexSerif = IBM_Plex_Serif({
+const sawarabiGothic = Sawarabi_Gothic({
   subsets: ["latin"],
-  weight:['400','700'],
-  variable:'--font-ibm-plex-serif'
+  weight:['400'],
+  variable:'--font-sawarabi-gothic'
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${sawarabiGothic.variable}`}>{children}</body>
     </html>
   );
 }
