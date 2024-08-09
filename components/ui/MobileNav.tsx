@@ -16,6 +16,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
   
 import React from 'react'
+import Footer from "./Footer"
 
 const MobileNav = ({user}:MobileNavProps) => {
   const pathname = usePathname();
@@ -41,7 +42,7 @@ const MobileNav = ({user}:MobileNavProps) => {
                             height={34}
                             alt='banking logo'
                         />
-                        <h1 className='text-26 text-sawarabiGothic text-white font-bold'>Banking</h1>
+                        <h1 className='text-26 font-sawarabi-gothic text-white font-bold'>Banking</h1>
                     </Link>
                     {/* menu icons */}
                     <div className="mobilenav-sheet">
@@ -76,7 +77,7 @@ const MobileNav = ({user}:MobileNavProps) => {
                                 USER
                             </nav>                         
                         </SheetClose>
-                        FOOTER
+                        <Footer user={user} type="mobile"/>
                     </div>
                 </SheetHeader>
             </SheetContent>

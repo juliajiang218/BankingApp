@@ -44,6 +44,9 @@
 }
 
 @layer utilities {
+  .font-sawarabi-gothic {
+    font-family: var(--font-sawarabi-gothic);
+  }
   .input-class {
     @apply text-16 placeholder:text-16 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
@@ -292,7 +295,11 @@
   }
 
   .form-btn {
-    @apply text-16 rounded-lg border border-bankGradient bg-bank-gradient font-semibold text-white shadow-form;
+    @apply text-16 rounded-lg border-2 border-gray-400 font-sawarabi-gothic text-black-1 shadow-form;
+  }
+
+  .form-btn:hover{
+    @apply bg-bankGradient text-white ease-linear
   }
 
   .form-link {
@@ -348,7 +355,7 @@
   }
 
   .footer_name-mobile {
-    @apply flex size-10 items-center justify-center rounded-full bg-gray-200;
+    @apply flex size-10 items-center justify-center rounded-full border-2 border-gray-200 bg-gray-200;
   }
 
   .footer_email-mobile {
