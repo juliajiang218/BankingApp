@@ -2,4 +2,5 @@ This is a responsive, scalable, functional banking web application for real-time
 It Implements key features including Appwrite Authentication login/sign-up page, application monitoring software program, real-time data updates, pagination and filtering options for transaction history design, funds transfer with required fields and IDs.
 
 • Included multiple APIs for functionality and data security, including Appwrite Autentication, Sentry, Plaid, Dwolla;
+
 • Utilized multiple frameworks and components for optimized site performance, code reusability, and CSS scoping.
